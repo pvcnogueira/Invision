@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useForm } from "react-hook-form";
+import React from 'react';
 import {
   Switch,
   Route,
@@ -13,18 +12,12 @@ import Slider from "./Slider";
 import Login from "./Login";
 import Register from "./Register";
 
-import logoGoole from '../assets/images/Google__G__Logo.svg';
 import banner from "../assets/images/banner.jpg";
 
 
 const Home = (props) => {
-  const { handleSubmit, register, errors } = useForm();
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
 
   let { path } = useRouteMatch();
-
-  const onSubmit = data => console.log(data);
 
   const slideData = Array(3).fill(null).map(e => {
     return {

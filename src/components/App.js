@@ -7,7 +7,6 @@ import {
 import '../scss/Materialize/materialize.scss';
 
 import Home from './Home';
-import Register from './Register';
 
 const App = () => {
 
