@@ -1,0 +1,52 @@
+@import './Materialize/materialize.scss';
+
+.login {
+    color: $primary-color;
+
+    .title{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .input-field {
+        margin: 0;
+        input{
+            color: #000;
+            font-weight: 600;
+            padding-left: 15px;
+        }
+    }
+
+    .forgot {
+        font-size: 14px;
+        color: $primary-color;
+        cursor: pointer;
+    }
+
+    .btn-flat {
+        font-size: 1.6rem;
+        padding: 0px 50px;
+        text-transform: unset;
+        font-weight: bold;
+    }
+
+    .bar {
+        font-size: 1.4rem;
+        color: $primary-color;
+    }
+
+    .sign {
+        width: 265px;
+        background-color: #fff;
+        padding: 3px 25px;
+        color: #000;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-transform: none;
+    }
+
+    .link {
+        color: #A9C5BA;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
