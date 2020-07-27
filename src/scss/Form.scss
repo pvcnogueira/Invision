@@ -1,18 +1,24 @@
 @import './Materialize/materialize.scss';
+@import "mixins.scss";
 
-.login {
+.form {
     color: $primary-color;
+    font-size: 1.4rem;
 
     .title{
-        font-size: 30px;
+        font-size: 3rem;
         font-weight: 400;
     }
     .input-field {
         margin: 0;
         input{
+            @include font-Mulish;
             color: #000;
-            font-weight: 600;
+            font-size: 1.6rem;
             padding-left: 15px;
+        }
+        label{
+            font-weight: 400;
         }
     }
 
@@ -35,9 +41,10 @@
     }
 
     .sign {
+        @include font-Mulish;
         width: 265px;
         background-color: #fff;
-        padding: 3px 25px;
+        padding: 3px 30px;
         color: #000;
         font-size: 1.8rem;
         font-weight: 500;

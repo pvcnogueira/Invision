@@ -16,7 +16,7 @@ const  Slider = (props) => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    {("title" in slide && slide.title !== "") ? <h3>{slide.title}</h3> : ""}
+                    {("title" in slide && slide.title !== "") ? <h1>{slide.title}</h1> : ""}
                     {("description" in slide && slide.description !== "") ? <p>{slide.description}</p> : ""}
                 </Carousel.Caption>
             </Carousel.Item>

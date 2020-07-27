@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import logoGoole from '../assets/images/Google__G__Logo.svg';
-import '../scss/Register.scss';
+import "../scss/Form.scss";
 
 const Register = () => {
     const { handleSubmit, register, errors } = useForm();
@@ -15,7 +15,7 @@ const Register = () => {
     const onSubmit = data => console.log(data);
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="login">
+        <form onSubmit={handleSubmit(onSubmit)} className="form">
             <Row className="m-0">
                 <Col className="text-center">
                     <label className="title">Getting Started</label>
@@ -54,6 +54,7 @@ const Register = () => {
                     <input
                         id="password"
                         name="password"
+                        type="password"
                         className={errors.password ? 'invalid' : ''}
                         onChange={value => setPassword(value)}
                         ref={register({
@@ -67,13 +68,13 @@ const Register = () => {
             </Row>
             <Row>
                 <Col className="text-center">
-                    <button className="btn-flat" type="submit">Sign In</button>
+                    <button className="btn-flat" type="submit">Sign Up</button>
                 </Col>
             </Row>
             <Row className="d-flex justify-content-center align-items-center bar">
-                <Col xs={5}><hr /></Col>
-                <Col xs={1} className="text-center primary-color">or</Col>
-                <Col xs={5}><hr /></Col>
+                <Col xs={4} className="p-0"><hr /></Col>
+                <Col xs={2} className="text-center primary-color p-0">Or</Col>
+                <Col xs={4} className="p-0"><hr /></Col>
             </Row>
             <Row>
                 <Col className="d-flex justify-content-center">

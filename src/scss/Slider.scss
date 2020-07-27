@@ -5,7 +5,7 @@ $carousel-control-color:            $white !default;
 $carousel-control-width:            15% !default;
 $carousel-control-opacity:          .5 !default;
 
-$carousel-indicator-width:          12px !default;
+$carousel-indicator-width:          11px !default;
 $carousel-indicator-height:         11px !default;
 $carousel-indicator-spacer:         3px !default;
 $carousel-indicator-active-bg:      $white !default;
@@ -103,8 +103,7 @@ $carousel-transition:               transform .6s ease !default;
   justify-content: center;
   padding-left: 0; // override <ol> default
   // Use the .carousel-control's width as margin so we don't overlay those
-  margin-right: $carousel-control-width;
-  margin-left: $carousel-control-width;
+  margin: auto;
   list-style: none;
 
   li {
@@ -116,8 +115,7 @@ $carousel-transition:               transform .6s ease !default;
     margin-left: $carousel-indicator-spacer;
     text-indent: -999px;
     background-color: rgba($carousel-indicator-active-bg, .5);
-    border-top: none;
-    border-bottom: none;
+    border: none;
     transition: $carousel-indicator-transition;
 
     // Use pseudo classes to increase the hit area by 10px on top and bottom.
@@ -162,4 +160,11 @@ $carousel-transition:               transform .6s ease !default;
   padding-bottom: 20px;
   color: $carousel-caption-color;
   text-align: center;
+  text-shadow: none;
+  h1{
+    font-size: 3rem;
+  }
+  p{
+    font-size: 2rem;
+  }
 }

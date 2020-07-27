@@ -1,6 +1,15 @@
 @mixin hover-focus {
-    &:hover,
-    &:focus {
-      @content;
-    }
+  &:hover,
+  &:focus {
+    @content;
   }
+}
+
+@mixin font-Mulish {
+  font-family: "Mulish", sans-serif;
+  letter-spacing: 0px;
+}
+@mixin font-Lato {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0px;
+}

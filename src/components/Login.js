@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 import logoGoole from '../assets/images/Google__G__Logo.svg';
-import "../scss/Login.scss";
+import "../scss/Form.scss";
 
 const Login = () => {
     const { handleSubmit, register, errors } = useForm();
@@ -14,7 +14,7 @@ const Login = () => {
     const onSubmit = data => console.log(data);
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="login">
+        <form onSubmit={handleSubmit(onSubmit)} className="form">
             <Row>
                 <Col className="text-center">
                     <label className="title">Welcome to Invision</label>
@@ -39,6 +39,7 @@ const Login = () => {
                     <input
                         id="password"
                         name="password"
+                        type="password"
                         className={errors.password ? 'invalid' : ''}
                         onChange={value => setPassword(value)}
                         ref={register({
@@ -59,9 +60,9 @@ const Login = () => {
                 </Col>
             </Row>
             <Row className="d-flex justify-content-center align-items-center bar">
-                <Col xs={5}><hr /></Col>
-                <Col xs={1} className="text-center primary-color">or</Col>
-                <Col xs={5}><hr /></Col>
+                <Col xs={4} className="p-0"><hr /></Col>
+                <Col xs={2} className="text-center primary-color p-0">Or</Col>
+                <Col xs={4} className="p-0"><hr /></Col>
             </Row>
             <Row>
                 <Col className="d-flex justify-content-center">
@@ -72,7 +73,7 @@ const Login = () => {
                 </Col>
             </Row>
             <Row>
-                <Col className="text-center">New Invision? <Link to="/register" className="link">Create Account</Link></Col>
+                <Col className="text-center">New <strong>Invision</strong>? <Link to="/register" className="link">Create Account</Link></Col>
             </Row>
         </form>
     );
